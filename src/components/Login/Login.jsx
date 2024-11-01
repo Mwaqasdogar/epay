@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import epay from "../../assets/epay.png";
 import cointwo from "../../assets/cointwo.svg";
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
-
+  const navigate = useNavigate()
   const handleEmailChange = (e) => setEmail(e.target.value);
   const handlePasswordChange = (e) => setPassword(e.target.value);
   const togglePasswordVisibility = () => setShowPassword(!showPassword);
@@ -14,6 +15,11 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log({ email, password });
+
+      navigate("/Layout")
+    
+    
+    
   };
 
   return (
@@ -86,11 +92,11 @@ function Login() {
             </div>
 
             <div className="flex items-center justify-center">
-              <button
+              <button 
                 className="bg-red-500 hover:bg-red-700 text-white font-bold py-3 px-6 rounded focus:outline-none focus:shadow-outline"
                 type="submit"
               >
-                Log in
+                Login
               </button>
             </div>
           </form>
