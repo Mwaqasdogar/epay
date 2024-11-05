@@ -14,8 +14,8 @@ function Coin() {
 
   return (
     <>
-      <div className="container mx-auto px-4 sm:px-8">
-        <div className="text-2xl sm:text-3xl font-bold mt-8 sm:mt-12 text-center sm:text-left">Coin</div>
+      <div className="container mx-auto px-4 ">
+      <p className="text-2xl tracking-wide font-semibold mt-6 ml-4 sm:ml-10">Coin</p>
         <div className="flex justify-center sm:justify-start">
           <div className="w-full sm:w-10/12 md:w-8/12 lg:w-6/12 mt-10 p-4 border border-gray-300 rounded-xl shadow-md bg-white">
             <div className="flex flex-wrap justify-between items-center text-center text-neutral-500">
