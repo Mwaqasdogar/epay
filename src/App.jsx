@@ -27,7 +27,7 @@ function App() {
   <Route path='/coin' element={<Layout><Coin/></Layout>}/>
   <Route path='/Transations' element={<Layout><Transations/></Layout>}/>
   <Route path='/admin' element={<Layout><Admin/></Layout>}/>
-  <Route path='setting' element={<Layout><Setting/></Layout>}></Route>
+  <Route path='/setting' element={<Layout><Setting/></Layout>}></Route>
  </Routes>
  </BrowserRouter>
     </>

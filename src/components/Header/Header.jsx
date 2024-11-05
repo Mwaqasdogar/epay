@@ -5,8 +5,13 @@ import { GoBell } from "react-icons/go";
 import Sidebar from '../Sidebar/Sidebar';
 import Ellipse from "../../assets/Ellipse.png";
 import Group from '../../assets/Group.png';
+import { useNavigate } from 'react-router-dom';
 
 function Header() {
+  const navigate = useNavigate();
+  function gotosetting(){
+    navigate ("/setting")
+  }
   return (
     <>
       <div className='w-full h-20 flex items-center px-4 md:px-8'>
@@ -30,7 +35,7 @@ function Header() {
             </div>
 
             
-            <CiSettings className='w-6 h-6 md:w-8 md:h-8 text-gray-600 cursor-pointer' />
+            <CiSettings onClick={gotosetting} className='w-6 h-6 md:w-8 md:h-8 text-gray-600 cursor-pointer' />
             <GoBell className='w-6 h-6 md:w-8 md:h-8 text-gray-600 cursor-pointer' />
           </div>
         </div>
